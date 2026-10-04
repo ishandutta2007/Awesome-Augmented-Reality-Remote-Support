@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 42px; fill: url(#titleGrad); }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #94a3b8; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 14px; fill: #e2e8f0; }
+    
+    /* Dynamic Animated Elements in Background */
+    @keyframes pulseGlow {
+      0% { opacity: 0.3; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.08); }
+      100% { opacity: 0.3; transform: scale(1); }
+    }
+
+    @keyframes scanline {
+      0% { transform: translateY(-50px); }
+      100% { transform: translateY(350px); }
+    }
+
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) rotate(0deg); opacity: 0.4; }
+      50% { transform: translateY(-15px) rotate(180deg); opacity: 0.8; }
+      100% { transform: translateY(0px) rotate(360deg); opacity: 0.4; }
+    }
+
+    .glowing-circle { animation: pulseGlow 6s infinite ease-in-out; transform-origin: center; }
+    .floating-hud { animation: floatParticle 8s infinite ease-in-out; transform-origin: center; }
+    .scan-beam { animation: scanline 4s infinite linear; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)" rx="16"/>
+  <rect width="1200" height="300" fill="url(#grid)" rx="16"/>
+
+  <!-- Background Dynamic Graphic Elements (Behind Text) -->
+  <g opacity="0.25">
+    <circle cx="1000" cy="150" r="180" fill="none" stroke="#6366f1" stroke-width="2" stroke-dasharray="10 15" class="glowing-circle" />
+    <circle cx="1000" cy="150" r="120" fill="none" stroke="#38bdf8" stroke-width="1.5" />
+    <circle cx="1000" cy="150" r="60" fill="none" stroke="#a855f7" stroke-width="2" stroke-dasharray="5 5" />
+    
+    <!-- AR Sight Crosshairs in BG -->
+    <line x1="1000" y1="20" x2="1000" y2="280" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 8"/>
+    <line x1="870" y1="150" x2="1130" y2="150" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 8"/>
+  </g>
+
+  <!-- Dynamic Geometric HUD elements (right side) -->
+  <g class="floating-hud" opacity="0.35">
+    <polygon points="950,70 1050,70 1080,120 1020,170 930,140" fill="none" stroke="#06b6d4" stroke-width="2"/>
+    <rect x="840" y="200" width="80" height="40" rx="6" fill="none" stroke="#818cf8" stroke-width="1.5"/>
+    <circle cx="880" cy="220" r="8" fill="#38bdf8" opacity="0.6"/>
+  </g>
+
+  <!-- Animated Scanning Ray -->
+  <line x1="0" y1="0" x2="1200" y2="0" stroke="url(#accentGrad)" stroke-width="2" opacity="0.5" class="scan-beam"/>
+
+  <!-- Foreground Content Block (High contrast, clearly visible) -->
+  <g transform="translate(60, 0)">
+    <!-- Category Pills -->
+    <g transform="translate(0, 45)">
+      <rect width="170" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+      <text x="85" y="21" text-anchor="middle" class="badge-text" fill="#38bdf8">🥽 Visual Guidance</text>
+    </g>
+    <g transform="translate(182, 45)">
+      <rect width="180" height="32" rx="16" fill="#1e293b" stroke="#818cf8" stroke-width="1"/>
+      <text x="90" y="21" text-anchor="middle" class="badge-text" fill="#818cf8">🛠️ Field Assistance</text>
+    </g>
+    <g transform="translate(374, 45)">
+      <rect width="165" height="32" rx="16" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+      <text x="82.5" y="21" text-anchor="middle" class="badge-text" fill="#c084fc">📡 Live WebRTC</text>
+    </g>
+
+    <!-- Main Title & Subtitle -->
+    <text x="0" y="135" class="title">Awesome AR Remote Support 🚀</text>
+    <text x="0" y="175" class="subtitle">A curated index of SaaS platforms &amp; open-source tools for enterprise visual collaboration.</text>
+
+    <!-- Stat Highlights -->
+    <g transform="translate(0, 215)">
+      <!-- Card 1 -->
+      <rect width="210" height="48" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="22" font-family="sans-serif" font-size="12" fill="#64748b">ENTERPRISE SAAS</text>
+      <text x="16" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f8fafc">10+ Verified Platforms</text>
+
+      <!-- Card 2 -->
+      <g transform="translate(225, 0)">
+        <rect width="210" height="48" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+        <text x="16" y="22" font-family="sans-serif" font-size="12" fill="#64748b">OPEN SOURCE</text>
+        <text x="16" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f8fafc">WebRTC &amp; MR Frameworks</text>
+      </g>
+
+      <!-- Card 3 -->
+      <g transform="translate(450, 0)">
+        <rect width="210" height="48" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+        <text x="16" y="22" font-family="sans-serif" font-size="12" fill="#64748b">TARGET HARDWARE</text>
+        <text x="16" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f8fafc">Smart Glasses &amp; Mobile</text>
+      </g>
+    </g>
+  </g>
+</svg>

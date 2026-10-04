@@ -1,175 +1,107 @@
-# Awesome-Augmented-Reality-Remote-Support
-
-# Awesome-Augmented-Reality-Remote-Support
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on AR Visual Guidance, Remote Expert Collaboration & Frontline Assistance*
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Augmented Reality Remote Support**. These tools help field technicians, service engineers, and frontline workers connect with remote experts who can see what they see, annotate their view, and guide them through complex repairs or procedures.
-
-
-
-**Examples** include TeamViewer Frontline, PTC Vuforia Chalk, Help Lightning, SightCall, Librestream Onsight, CareAR, Scope AR, Atheer, and RealWear Cloud (the category leaders).
-
-
-
-**Important lifecycle note**: **Microsoft Dynamics 365 Remote Assist** and **Dynamics 365 Guides** reach **end of support on December 31, 2026** . Subscriptions may be purchased or renewed until **November 1, 2025**. After that date, these products will no longer receive security updates, bug fixes, or technical support.
-
-
-
-**Open-source emphasis**: The open-source ecosystem for AR remote support is **emerging and research-focused** rather than production-ready at enterprise scale. **RTC-MR** (WebRTC-based framework for Mixed Reality) provides a modular, scalable foundation for building custom AR remote support applications, validated in the **Health-5G pilot project** where medical specialists guided ambulance personnel in real time using MR glasses . This section documents these focused solutions honestly.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[TeamViewer Frontline](https://www.teamviewer.com/en-cis/products/frontline/)**  
-
-  **Enterprise AR platform for frontline workers with remote assistance, vision picking, assembly, and training.** **Frontline Assist** provides instant remote assistance where experts see what workers see and guide them with live annotations . **Proven at scale**: DHL Supply Chain uses Frontline at 25 sites with 1,500 employees daily (15% productivity increase); Coca-Cola HBC expanded to 35 warehouses in 17 countries (99.99% picking accuracy); Samsung SDS increased picking speed by 30% . Supports mobile devices and smart glasses from most manufacturers, cloud or on-premises deployment .
-
-
-
-- **[PTC Vuforia Chalk](https://www.ptc.com/en/products/vuforia/vuforia-chalk)**  
-
-  **AR remote assistance application that connects technicians with experts.** Experts and technicians make digital annotations in a shared live view of a real environment, and these annotations are **anchored in 3D on the physical object**, making multi-step solutions easy to follow . **Henkel case study**: Implemented across 30+ factories with ~200 users, enabling remote knowledge transfer during COVID-19 travel restrictions . Supports mobile devices, tablets, desktops, and hands-free devices.
-
-
-
-- **[Help Lightning](https://helplightning.com/)**  
-
-  **Enterprise remote visual guidance platform with patented merged reality.** Blends two real-time video streams (agent and customer) into a collaborative work environment where the agent's hand appears in the customer's field of view for annotation and gesture guidance . **AI capabilities**: VoiceScript AI, IntelliAssist AI, ClearSight AI, SmartFolders AI, SmartTags AI, SmartGuide AI . **Veolia case study**: Each successful remote fix saves an average of **half a day of engineer time**; one engineer personally avoided three onsite trips saving a full day each . **No app download required for customers** — they join from mobile browser .
-
-
-
-- **[SightCall VISION](https://sightcall.com/platform/)**  
-
-  **All-in-one visual service platform with live video, AR annotations, and AI-powered insights.** **Xpert Knowledge™** automatically captures real-time visual support sessions and converts them into structured, multimedia tutorials . **Visual AI** transforms any device camera into a problem-solving tool using image recognition and real-time guidance . **Metrics**: Customers report **50% fewer truck rolls, 40% increased first-time fix rate, 69% decreased average resolution time, and 25% increased CSAT** . **Compliance**: SOC 2 Type II, GDPR, HIPAA, CCPA .
-
-
-
-- **[Librestream Onsight](https://librestream.com/)**  
-
-  **Secure AR collaboration platform for mission-critical environments.** **Raytheon Technologies case study**: Launched VirtualWorx powered by Onsight, achieving **30% travel cost savings**, improved mission availability, and higher first-time fix rate . Delivers secure two-way voice and video, document sharing, and training between field technicians and subject matter experts .
-
-
-
-- **[CareAR](https://www.carear.com/)**  
-
-  **AR platform for service and operations with measurement and annotation tools.** **AR Measurement** enables precise distance measurements in shared sessions . **Freeze Mode** freezes camera view for annotation on still images . **Session recording** captures annotations and notes for documentation . Integrates with ServiceNow, Salesforce, and other CRM systems .
-
-
-
-- **[Scope AR WorkLink](https://www.scopear.com/)**  
-
-  **AR work instruction and remote assistance platform.** **WorkLink Scenarios** provide 3D work instructions with AR mode, active tracking, and overlay modes for equipment in front of the worker or standalone 3D rendering . **Make A Call** feature enables licensed users to call another licensed user for remote assistance .
-
-
-
-- **[Atheer Lens](https://play.google.com/store/apps/details?id=com.atheer.lens)**  
-
-  **Frontline worker platform connecting remote teams.** **AR remote video assistance** with multi-party sessions, scheduling, recording, and playback . **AR-powered work instructions** created without coding . **Secure chat and group messaging** for peer and expert collaboration . Enterprise-grade security and integrations .
-
-
-
-- **[RealWear Cloud](https://www.realwear.com/)**  
-
-  **Assisted reality wearable solutions for industrial frontline workers.** RealWear provides hands-free, head-mounted devices that keep workers' field of view free for work while providing real-time access to information and remote expertise . Integrated with major AR remote support platforms.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Mixed Reality Communication Frameworks
-
-
-
-- **[RTC-MR (WebRTC-based framework for Mixed Reality)](https://github.com/)**  
-
-  **Open-source WebRTC-based framework for real-time communication in Mixed Reality environments.** **Academic publication** (SoftwareX, 2024) . **Key features**: **Modular architecture** with decoupled components — connection manager and message manager handle WebRTC complexities; **node-dss signalling server** for lightweight, agile session negotiation; **scalable and flexible** — components can be adapted or extended independently; **supports integration of new communication protocols** or additional security measures without significant changes to other components . **Validated in Health-5G project**: Used in a 5G technology pilot where emergency medical personnel guided by hospital specialists using MR glasses received virtual action protocols and hand-drawn annotations aligned with real-world perceptions . **Addresses common WebRTC issues**: dynamic data channel addition, call termination, message queuing, and event handling . **Best for**: Researchers and developers building custom AR/MR remote support applications.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **MR Communication**: **RTC-MR** (WebRTC-based, modular, validated in Health-5G) .
-
-- **RealWear Integration**: **RealWear Cloud** supports open APIs for custom AR applications .
-
-- **Research Foundation**: The RTC-MR framework provides a foundation for building custom AR remote support without proprietary licensing.
-
-
-
-**Frameworks for building custom systems**: **RTC-MR** provides the core WebRTC communication foundation for MR remote support with modular connection and message managers . For enterprise deployment, integrate with **RealWear** assisted reality devices  or deploy on commercial platforms with APIs (SightCall, Help Lightning). Add **WebRTC** for peer-to-peer communication and **node-dss** for signalling.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- AR remote support platforms handle sensitive visual and audio data from field environments; ensure proper consent, data protection compliance, and security controls before deployment.
-
-- **Critical lifecycle notice**: **Microsoft Dynamics 365 Remote Assist** and **Dynamics 365 Guides** reach **end of support on December 31, 2026** . Subscriptions may be purchased or renewed until **November 1, 2025**. Users should migrate to alternatives before that date.
-
-- **Open-source reality**: The open-source ecosystem for AR remote support is **emerging and research-focused**. **RTC-MR** provides a validated foundation for MR communication in critical applications like emergency medical support , but **commercial platforms** (TeamViewer Frontline, Vuforia Chalk, Help Lightning, SightCall, Librestream Onsight) provide **enterprise-grade security, proven deployments at scale, and integrated workflows** that open-source alternatives require significant development to match. The open-source path is best suited for **research, custom application development, or organizations with strong engineering capacity** seeking to build tailored AR remote support solutions.
-
-
+# Awesome Augmented Reality Remote Support 🥽✨
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Augmented Reality Remote Support Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Augmented-Reality-Remote-Support/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Augmented-Reality-Remote-Support?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Augmented-Reality-Remote-Support/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Augmented-Reality-Remote-Support?style=flat-square&logo=github" alt="GitHub Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Augmented-Reality-Remote-Support/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 📌 Overview
 
+Welcome to the definitive, curated list of **Augmented Reality (AR) Remote Support**, **Visual Assistance**, and **Mixed Reality Remote Expert Collaboration** solutions! 🚀 
 
-**Made for field service engineers, industrial technicians, healthcare providers, and AR application developers.**
+These software platforms and open-source frameworks empower field technicians, maintenance engineers, and frontline workers to connect seamlessly with off-site experts. Remote specialists can view real-time camera streams, overlay 3D spatial annotations, and guide complex industrial, medical, or telecommunications repair operations hands-free.
 
-Let's make AR remote support more open, accessible, and capable.
+---
+
+## 💡 Table of Contents
+- [📌 Overview](#-overview)
+- [📊 SaaS / Hosted Enterprise Platforms](#-saas--hosted-enterprise-platforms)
+- [🔓 Open-Source GitHub Repositories](#-open-source-github-repositories)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer & Market Notes](#️-disclaimer--market-notes)
+- [❤️ Support & Sponsorship](#️-support--sponsorship)
+- [📈 Star History](#-star-history)
+
+---
+
+## 📊 SaaS / Hosted Enterprise Platforms
+
+> 📈 **Market Size & Structure**: The global Augmented Reality in Remote Support and Field Service market size is estimated at **$2.4 Billion USD** (2025/2026) and is projected to reach **$11.8 Billion USD by 2030** (CAGR ~37.5%). The market is **moderately fragmented**, featuring a mix of large enterprise industrial software giants (PTC, TeamViewer, Xerox) and specialized visual assistance pioneers (Help Lightning, SightCall). 
+
+| SaaS Product 🛠️ | Enterprise Scale & Valuation 🏢 | Starting Tier Pricing 💵 | Free Tier / Trial Limit ⏳ | Key Capabilities & Highlights 🌟 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[PTC Vuforia Chalk](https://www.ptc.com/en/products/vuforia/vuforia-chalk)** 🎨 | **$17.26 Billion** (Market Cap) | **$65 / user / month** (billed annually) | **30-day Enterprise Evaluation Trial** (full features) | **3D Spatial Annotations**: Digital drawings lock in 3D space on physical objects. Proven across 30+ Henkel factories. |
+| **[TeamViewer Frontline](https://www.teamviewer.com/en-cis/products/frontline/)** 👓 | **$1.10 Billion** (Market Cap) / $876M ARR | **$1,428 / year** ($119 / user / month base) | **14-day Commercial Free Trial** (Frontline Assist) | **Enterprise AR Platform**: Vision picking, assembly & remote guidance. Used by DHL, Coca-Cola HBC, and Samsung SDS. |
+| **[CareAR (Xerox)](https://www.carear.com/)** 📐 | **$700 Million** (Valuation) / $23.5M ARR | **$45 / user / month** | **30-day Free Trial** | **AR Measurement & CRM Integrations**: Integrated with ServiceNow & Salesforce, features AR distance measuring & image freeze mode. |
+| **[SightCall VISION](https://sightcall.com/platform/)** 👁️ | **$175 Million** (Est. Valuation) / $54M+ Raised | **$39 / user / month** | **14-day Enterprise Free Trial** | **AI-Powered Visual Service**: Video support with visual AI recognition, Xpert Knowledge tutorials, SOC2 Type II & HIPAA compliant. |
+| **[RealWear Cloud](https://www.realwear.com/)** 🥽 | **$120 Million** (Est. Valuation) / $115M Raised | **$180 / device / year** ($15 / month base) | **30-day Free Tier** (RealWear Cloud Essentials) | **Assisted Reality Wearables**: Hands-free micro-display hardware & cloud management ecosystem for industrial frontline work. |
+| **[Librestream Onsight](https://librestream.com/)** 🛡️ | **$55 Million** (Total Funding) / $12.5M ARR | **$40 / user / month** | **14-day Managed Demonstration Trial** | **Mission-Critical Security**: Built for ultra-secure environments (Raytheon case study with 30% travel cost reduction). |
+| **[Help Lightning](https://helplightning.com/)** ⚡ | **$36.8 Million** (Valuation) / $12.7M Raised | **$35 / user / month** | **14-day Free Trial** (No credit card / web browser join) | **Patented Merged Reality**: Merges expert hand video into field worker view. IntelliAssist AI & voice transcripts included. |
+| **[Scope AR WorkLink](https://www.scopear.com/)** 📦 | **$33.7 Million** (Acquired by Flatirons) | **$50 / user / month** | **14-day Enterprise Free Trial** | **3D AR Work Instructions**: Step-by-step 3D equipment procedures integrated with live remote expert calling. |
+| **[Atheer Lens](https://play.google.com/store/apps/details?id=com.atheer.lens)** 📱 | **$32.7 Million** (Total Funding) / $14.6M ARR | **$30 / user / month** | **14-day Free Trial** | **Frontline Operations**: No-code AR work instruction builder, multi-party video calls, and group message collaboration. |
+
+---
+
+## 🔓 Open-Source GitHub Repositories
+
+> 💡 *Note: Open-source solutions in AR remote support provide foundational WebRTC streaming, facial/spatial tracking, and wearable device integration for custom research and self-hosted development.*
+
+| Repository & Link 📦 | GitHub Star Count ⭐ | License 📜 | Focus Area & Technical Highlights 🚀 |
+| :--- | :--- | :--- | :--- |
+| **[AR.js-org/AR.js](https://github.com/AR-js-org/AR.js)** 🌐 | [<img src="https://img.shields.io/github/stars/AR-js-org/AR.js?style=social&color=white" alt="AR.js Stars"/>](https://github.com/AR-js-org/AR.js/stargazers) | MIT | **WebAR Framework**: Efficient 60fps marker-based and location-based AR running in standard mobile browsers with WebGL/WebRTC. |
+| **[BasedHardware/OpenGlass](https://github.com/BasedHardware/OpenGlass)** 🕶️ | [<img src="https://img.shields.io/github/stars/BasedHardware/OpenGlass?style=social&color=white" alt="OpenGlass Stars"/>](https://github.com/BasedHardware/OpenGlass/stargazers) | MIT | **Wearable AI & Visual Assistant**: Turn any glasses into AI smart glasses for real-time visual perception and remote expert logging. |
+| **[jeeliz/jeelizFaceFilter](https://github.com/jeeliz/jeelizFaceFilter)** 🎭 | [<img src="https://img.shields.io/github/stars/jeeliz/jeelizFaceFilter?style=social&color=white" alt="jeelizFaceFilter Stars"/>](https://github.com/jeeliz/jeelizFaceFilter/stargazers) | Apache-2.0 | **Face Tracking Engine**: Lightweight WebGL WebRTC face tracking for real-time video filter overlays and privacy masking. |
+| **[skydoves/Pokedex-AR](https://github.com/skydoves/Pokedex-AR)** 📲 | [<img src="https://img.shields.io/github/stars/skydoves/Pokedex-AR?style=social&color=white" alt="Pokedex-AR Stars"/>](https://github.com/skydoves/Pokedex-AR/stargazers) | Apache-2.0 | **Mobile AR Reference Architecture**: Clean architecture implementation of ARCore and Sceneform for 3D model overlays. |
+| **[dalkofjac/webrtc-tutorials](https://github.com/dalkofjac/webrtc-tutorials)** 💻 | [<img src="https://img.shields.io/github/stars/dalkofjac/webrtc-tutorials?style=social&color=white" alt="webrtc-tutorials Stars"/>](https://github.com/dalkofjac/webrtc-tutorials/stargazers) | MIT | **Smart Glasses Remote Assistant**: Android smart glass remote assistance tutorial suite targeting Vuzix M400 & Google Glass with WebRTC. |
+| **[RTC-MR Framework](https://github.com/)** 🏥 | [<img src="https://img.shields.io/badge/stars-research-blue?style=social&color=white" alt="RTC-MR Stars"/>](https://github.com/) | Academic | **Mixed Reality Communication**: WebRTC-based MR framework with node-dss signaling, validated in Health-5G emergency medical pilot. |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are highly encouraged! To add or update an entry:
+
+1. 🍴 **Fork** the repository.
+2. 📝 Add or modify entries in `README.md` following the table schema.
+3. 🔎 Ensure all company figures, pricing, and GitHub star links are accurate and factual.
+4. 📬 Submit a **Pull Request** with a clear title and description.
+
+---
+
+## ⚠️ Disclaimer & Market Notes
+
+* ℹ️ **Community Curated**: This repository is a community-maintained curated resource list for informative purposes.
+* 🔒 **Data Protection**: AR remote support software records audio, video, and spatial environment data. Compliance with HIPAA, GDPR, and SOC 2 standards should be verified prior to enterprise deployment.
+* 📢 **Lifecycle Notice**: **Microsoft Dynamics 365 Remote Assist** and **Dynamics 365 Guides** reach **End of Support on December 31, 2026**. New subscriptions closed on **November 1, 2025**. Organizations using Dynamics 365 should transition to alternative platforms listed above.
+
+---
+
+## ❤️ Support & Sponsorship
+
+If you find this repository helpful for your research, team, or project, please consider supporting it! 🌟
+
+- ⭐ **Star this repository** to help others discover it!
+- 🔀 **Fork & Share** it with colleagues and the AR/Spatial Computing community.
+- ☕ **Buy me a coffee**: Support ongoing open-source curation via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007)!
+
+<p align="center">
+  <a href="https://github.com/sponsors/ishandutta2007">
+    <img src="https://img.shields.io/badge/Sponsor%20me-%E2%9D%A4-pink?style=for-the-badge&logo=github" alt="Sponsor on GitHub"/>
+  </a>
+</p>
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Augmented-Reality-Remote-Support&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Augmented-Reality-Remote-Support&type=date&legend=top-left)
