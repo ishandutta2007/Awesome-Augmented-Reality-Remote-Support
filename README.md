@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Augmented-Reality-Remote-Support/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Augmented-Reality-Remote-Support?style=flat-square&logo=github" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Augmented-Reality-Remote-Support/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Augmented-Reality-Remote-Support?style=flat-square&logo=github" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Augmented-Reality-Remote-Support/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Augmented-Reality-Remote-Support?style=flat-square&logo=github" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Augmented-Reality-Remote-Support/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -56,7 +56,7 @@ These software platforms and open-source frameworks empower field technicians, m
 
 > 💡 *Note: Open-source solutions in AR remote support provide foundational WebRTC streaming, facial/spatial tracking, and wearable device integration for custom research and self-hosted development.*
 
-| Repository & Link 📦 | GitHub Star Count ⭐ | License 📜 | Focus Area & Technical Highlights 🚀 |
+| Repository & Link 📦 | GitHub Stars_Count ⭐ | License 📜 | Focus Area & Technical Highlights 🚀 |
 | :--- | :--- | :--- | :--- |
 | **[AR.js-org/AR.js](https://github.com/AR-js-org/AR.js)** 🌐 | [<img src="https://img.shields.io/github/stars/AR-js-org/AR.js?style=social&color=white" alt="AR.js Stars"/>](https://github.com/AR-js-org/AR.js/stargazers) | MIT | **WebAR Framework**: Efficient 60fps marker-based and location-based AR running in standard mobile browsers with WebGL/WebRTC. |
 | **[BasedHardware/OpenGlass](https://github.com/BasedHardware/OpenGlass)** 🕶️ | [<img src="https://img.shields.io/github/stars/BasedHardware/OpenGlass?style=social&color=white" alt="OpenGlass Stars"/>](https://github.com/BasedHardware/OpenGlass/stargazers) | MIT | **Wearable AI & Visual Assistant**: Turn any glasses into AI smart glasses for real-time visual perception and remote expert logging. |
